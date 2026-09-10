@@ -1,0 +1,18 @@
+{
+  "name": "zenmart",
+  "module": "index.ts",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "dev": "bun --hot ./src/index.ts",
+    "build": "bun build ./src/index.ts --outdir ./dist",
+    "start": "export NODE_ENV=production && bun run ./dist/index.js",
+    "clean": "rm -rf node_modules dist"
+  },
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^7"
+  }
+}
